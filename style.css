@@ -1,5 +1,5 @@
-/* color: 
- - primary color: #339af0, shades:#ebf5fe, #d6ebfc, #70b8f5, #0f2e48, #0a1f30*/
+/* color: #ACC8E5
+ - primary color: #339af0, shades:#ebf5fe, #d6ebfc, #70b8f5, #1f5c90, #0f2e48, #0a1f30*/
 
 */ * {
   margin: 0;
@@ -19,11 +19,59 @@ body {
   margin: 0;
 }
 
+/* .grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+} */
+
+/* .grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+} */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
 .heading-primary {
   margin-top: 0;
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
+  color: #d6ebfc;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 6.4rem;
+  color: #0a1f30;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  color: #1f5c90;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 /* ******************* */
@@ -35,10 +83,11 @@ body {
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url(img/patung-dewi.jpg);
+    url(img/patungSaraswati.jpg);
   background-size: cover;
   background-position: 10%;
   position: relative;
+  margin-bottom: 9.6rem;
 }
 
 .section-header {
@@ -100,10 +149,10 @@ body {
 /* HERO */
 /* ******************* */
 
-.hero {
-  /* display: grid;
+/* .hero { */
+/* display: grid;
   grid-template-columns: repeat(2, 1fr); */
-}
+/* } */
 
 .hero-text {
   color: #d6ebfc;
@@ -112,11 +161,90 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.05;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 18px;
+  background-color: #0f2e48d0;
 }
 
 .hero-description {
   font-size: 2.4rem;
   padding: 1.2rem;
-  border-radius: 18px;
-  background-color: #0f2e48d0;
+}
+
+/* ******************* */
+/* HEADMASTER & SIGN-UP*/
+/* ******************* */
+.headmaster {
+  display: flex;
+  margin-bottom: 9.6rem;
+  background-color: #233545;
+}
+
+.headmaster-img {
+}
+
+.headmaster-text {
+  color: #e7e9ea;
+}
+
+.headmaster .heading-tertiary {
+  color: #e7e9ea;
+}
+
+/* ******************* */
+/* NEWS*/
+/* ******************* */
+.section-news {
+  padding: 9.6rem 0;
+  background-color: #ebf5fe;
+}
+
+.container .heading-secondary {
+  background-color: #339af0;
+  padding: 1.2rem;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.news-img-box {
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.news-img {
+  display: block;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.news-img:hover {
+  transform: scale(1.1);
+}
+
+.news-text .heading-tertiary {
+  color: #0a1f30;
+}
+
+.news-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-right: 2.4rem;
+}
+
+.detail {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+  color: #0f2e48;
 }
