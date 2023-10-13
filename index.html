@@ -13,6 +13,15 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>SMAN 1 Baturiti</title>
   </head>
@@ -52,114 +61,222 @@
     </header>
     <main>
       <section class="headmaster container">
-        <img
-          class="headmaster-img"
-          src="img/KepalaSekolah.jpg"
-          alt="gambar kepala sekolah SMAN 1 Baturiti"
-        />
-        <div class="headmaster-text">
-          <h3 class="heading-tertiary">Kepala Sekolah SMAN 1 Baturiti</h3>
-          <p class="head-=master-description">
-            Nama : Drs.I Wayan Wardana Yasa.,M.Pd <br />
-            Tempat,Tanggal lahir : Kuwum, 27 Juli 1967 <br />
-            Alamat : Banjar Dinas Kuwum Ancak, Desa Kuwum, Marga
+        <div class="headmaster-img-box">
+          <img
+            class="headmaster-img"
+            src="img/kepala-sekolah.jpg"
+            alt="gambar kepala sekolah SMAN 1 Baturiti"
+          />
+        </div>
+        <div class="headmaster-text-box">
+          <h3 class="heading-tertiary">Drs. I Wayan Wardana Yasa., M.Pd</h3>
+          <p>(Kepala Sekolah SMAN 1 Baturiti)</p>
+          <p class="headmaster-description">
+            Drs. I Wayan Wardana Yasa., M.Pd lahir di Kuwum , 27 Juli 1967. Umur
+            56 Tahun, berasal dari Banjar Dinas Kuwum Ancak, Desa Kuwum, Marga.
+            Telah mengabdi di SMA N 1 Baturiti selama 1 Tahun. Penah mengajar
+            mata pelajaran Biologi.
           </p>
         </div>
       </section>
-      <section class="section-news">
+      <section class="section-information">
         <div class="container">
-          <span class="subheading">news</span>
-          <h2 class="heading-secondary">Berita Terbaru</h2>
-        </div>
-        <div class="news container grid">
-          <!-- news 01 -->
-          <div class="news-img-box">
-            <img
-              class="news-img"
-              src="img/FLS2N.jpeg"
-              alt="gambar siswa berprestasi"
-            />
-          </div>
-          <div class="news-text">
-            <h3 class="heading-tertiary">
-              Siswa SMERTI mendapat Juara 2-FLS2N Provinsi Bali
-            </h3>
-            <p class="news-description">
-              Siswa SMERTI berhasil mendapatkan juara 2 dalam lomba Film Pendek
-              Provinsi Bali Tahun 2023. Dengan karya film pendeng yang berjudul
-              <q>Jengah</q>
-            </p>
-            <a class="detail" href="#">Selengkapnya...</a>
-            <hr />
+          <div class="info-box">
+            <p class="subheading">Informasi</p>
+            <h2 class="heading-secondary">Tentang Sekolah</h2>
+            <div class="informations">
+              <div class="info">
+                <img
+                  class="info-img"
+                  src="img/siswa-smerti.jpg"
+                  alt="siswa-siswi SMAN 1 Baturiti"
+                />
+
+                <div class="info-content">
+                  <p class="info-title">Tentang Sekolah</p>
+                  <ul class="info-attributes">
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="ribbon-outline"
+                      ></ion-icon>
+                      <span>Akreditasi A</span>
+                    </li>
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="alarm-outline"
+                      ></ion-icon>
+                      <span>Jam Belajar sehari penuh/5 hari</span>
+                    </li>
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="school-outline"
+                      ></ion-icon>
+                      <span>Kurikulum Merdeka Belajar</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info">
+                <img
+                  class="info-img"
+                  src="img/siswa-belajar.jpg"
+                  alt="siswa-siswi SMAN 1 Baturiti"
+                />
+
+                <div class="info-content">
+                  <p class="info-title">Fasilitas</p>
+                  <ul class="info-attributes">
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="globe-outline"
+                      ></ion-icon>
+                      <span>Internet</span>
+                    </li>
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="flask-outline"
+                      ></ion-icon>
+                      <span>Lab Biologi</span>
+                    </li>
+                    <li class="info-attribute">
+                      <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="info-icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                        />
+                      </svg> -->
+                      <ion-icon
+                        class="info-icon"
+                        name="laptop-outline"
+                      ></ion-icon>
+
+                      <span>Lab Komputer</span>
+                    </li>
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="library-outline"
+                      ></ion-icon>
+                      <span>Perputakaan</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- news 02 -->
-          <div class="news-img-box">
-            <img
-              class="news-img"
-              src="img/smerti.jpg"
-              alt="gambar lomba bulan bahasa di SMAN 1 Baturiti"
-            />
-          </div>
-          <div class="news-text">
-            <h3 class="heading-tertiary">
-              Kegiatan Bulan Bahasa SMAN 1 Baturiti
-            </h3>
-            <p class="news-description">
-              Kegiatan lomba Bulan Bahasa antar kelas di SMAN 1 Baturiti. Bulan
-              Bahasa adalah wujud kecintaan sekaligus rasa hormat kepada bahasa
-              nasional. Siswa SMERTI melaksanakan beberapa lomba diantaranya
-              mesatua, nyurat aksara, drama, dan lainnya
-            </p>
-            <a class="detail" href="#">Selengkapnya...</a>
-            <hr />
-          </div>
+          <div class="news-box">
+            <!-- <div class="container"> -->
+            <span class="subheading">news</span>
+            <h2 class="heading-secondary">Berita Terbaru</h2>
+            <!-- </div> -->
+            <div class="news">
+              <!-- news 01 -->
+              <div class="news-img-box">
+                <img
+                  class="news-img"
+                  src="img/news/FLS2N.jpeg"
+                  alt="gambar siswa berprestasi"
+                />
+              </div>
+              <div class="news-text">
+                <h3 class="heading-tertiary">
+                  Siswa SMERTI mendapat Juara 2-FLS2N Provinsi Bali
+                </h3>
+                <p class="news-description">
+                  Siswa SMERTI berhasil mendapatkan juara 2 dalam lomba Film
+                  Pendek Provinsi Bali Tahun 2023. Dengan karya film pendeng
+                  yang berjudul
+                  <q>Jengah</q>
+                </p>
+                <a class="detail" href="#">Selengkapnya...</a>
+                <hr />
+              </div>
 
-          <!-- news 03 -->
-          <div class="news-img-box">
-            <img
-              class="news-img"
-              src="img/satejpg.jpg"
-              alt="gambar lomba ngelawar SMAN 1 Baturiti"
-            />
-          </div>
-          <div class="news-text">
-            <h3 class="heading-tertiary">
-              Kegiatan Lomba Nyate dan Lawar Siswa SMERTI
-            </h3>
-            <p class="news-description">
-              Lomba membuat Sate dan Lawar dalam rangka menyambut Hari Raya
-              Saraswati. Siswa-siswi SMERTI mengadakan kegiatan lomba ngelawar
-              dan membuat sate oleh siswa SMERTI, kegiatan ini dilakukan secara
-              rutin dalam memperingati Hari Raya Saraswati. Selain itu lomba
-              membuat Gebogan juga di lakukan oleh siswi Smerti.
-            </p>
-            <a class="detail" href="#">Selengkapnya...</a>
-            <hr />
-          </div>
+              <!-- news 02 -->
+              <div class="news-img-box">
+                <img
+                  class="news-img"
+                  src="img/news/bulanBahasa.jpg"
+                  alt="gambar lomba bulan bahasa di SMAN 1 Baturiti"
+                />
+              </div>
+              <div class="news-text">
+                <h3 class="heading-tertiary">
+                  Kegiatan Bulan Bahasa SMAN 1 Baturiti
+                </h3>
+                <p class="news-description">
+                  Kegiatan lomba Bulan Bahasa antar kelas di SMAN 1 Baturiti.
+                  Bulan Bahasa adalah wujud kecintaan sekaligus rasa hormat
+                  kepada bahasa nasional. Siswa SMERTI melaksanakan beberapa
+                  lomba diantaranya menyanyi lagu pop, mesatua, nyurat aksara,
+                  drama, dan lainnya
+                </p>
+                <a class="detail" href="#">Selengkapnya...</a>
+                <hr />
+              </div>
 
-          <!-- new 04 -->
-          <div class="news-img-box">
-            <img
-              class="news-img"
-              src="img/pramuka.jpg"
-              alt="Upacara pembukaan kemah akbar SMAN 1 Baturiti"
-            />
-          </div>
-          <div class="news-text">
-            <h3 class="heading-tertiary">
-              Kegiatan Kemah Akbar Ambalan Arjuna-Srikandi SMERTI
-            </h3>
-            <p class="news-description">
-              Kegiatan Kemah besar yang di laksanakan tanggal ... di Bumi
-              Perkemahan Margarana. Perkemahan ini di ikuti oleh seluruh
-              siswa-siswi kelas X dan juga Dewan Ambalan Arjuna-Srikandi.
-              Kegiatan kemah ini berlangsung selama 3 hari 2 malam, dengan
-              melakukan beberapa kegiatan seperti Pentas Seni, Api Unggun, Upaca
-              pembukaan dan lainnya.
-            </p>
-            <a class="detail" href="#">Selengkapnya...</a>
-            <hr />
+              <!-- news 03 -->
+              <div class="news-img-box">
+                <img
+                  class="news-img"
+                  src="img/news/satejpg.jpg"
+                  alt="gambar lomba ngelawar SMAN 1 Baturiti"
+                />
+              </div>
+              <div class="news-text">
+                <h3 class="heading-tertiary">
+                  Kegiatan Lomba Nyate dan Lawar Siswa SMERTI
+                </h3>
+                <p class="news-description">
+                  Lomba membuat Sate dan Lawar dalam rangka menyambut Hari Raya
+                  Saraswati. Siswa-siswi SMERTI mengadakan kegiatan lomba
+                  ngelawar dan membuat sate oleh siswa SMERTI, kegiatan ini
+                  dilakukan secara rutin dalam memperingati Hari Raya Saraswati.
+                  Selain itu lomba membuat Gebogan juga di lakukan oleh siswi
+                  Smerti.
+                </p>
+                <a class="detail" href="#">Selengkapnya...</a>
+                <hr />
+              </div>
+
+              <!-- new 04 -->
+              <div class="news-img-box">
+                <img
+                  class="news-img"
+                  src="img/news/pramuka.jpg"
+                  alt="Upacara pembukaan kemah akbar SMAN 1 Baturiti"
+                />
+              </div>
+              <div class="news-text">
+                <h3 class="heading-tertiary">
+                  Kegiatan Kemah Akbar Ambalan Arjuna-Srikandi SMERTI
+                </h3>
+                <p class="news-description">
+                  Kegiatan Kemah besar yang di laksanakan tanggal ... di Bumi
+                  Perkemahan Margarana. Perkemahan ini di ikuti oleh seluruh
+                  siswa-siswi kelas X dan juga Dewan Ambalan Arjuna-Srikandi.
+                  Kegiatan kemah ini berlangsung selama 3 hari 2 malam, dengan
+                  melakukan beberapa kegiatan seperti Pentas Seni, Api Unggun,
+                  Upaca pembukaan dan lainnya.
+                </p>
+                <a class="detail" href="#">Selengkapnya...</a>
+                <hr />
+              </div>
+            </div>
           </div>
         </div>
         <!-- <div class="location">
@@ -176,7 +293,7 @@
         </div> -->
       </section>
       <section class="section-sign-up">
-        <div class="sign-up">
+        <div class="sign-up container">
           <h3 class="heading-tertiary">Login Member</h3>
           <form class="login-form" action="#">
             <div>
