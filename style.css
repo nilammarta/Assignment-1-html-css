@@ -1,5 +1,11 @@
-/* color: #ACC8E5
- - primary color: #339af0, shades:#ebf5fe, #d6ebfc, #70b8f5, #1f5c90, #0f2e48, #0a1f30*/
+/*
+ color: #ACC8E5
+ - primary color: #339af0, shades:#ebf5fe, #d6ebfc, #70b8f5, #1f5c90, #0f2e48, #0a1f30
+ 
+ Gray-color: #444, #f1f3f5
+
+
+ */
 
 */ * {
   margin: 0;
@@ -39,14 +45,14 @@ body {
 
 .heading-primary {
   margin-top: 0;
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
   color: #d6ebfc;
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 6.4rem;
@@ -147,18 +153,18 @@ body {
   border-radius: 10px;
 }
 
+.search-icon {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 /* ******************* */
 /* HERO */
 /* ******************* */
-
-/* .hero { */
-/* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-/* } */
-
 .hero-text {
-  color: #d6ebfc;
-  padding: 6.4rem 4.8rem 4.8rem 4.8rem;
+  color: #ebf5fe;
+  padding: 6.4rem 2.4rem 4.8rem 2.4rem;
+  margin-bottom: 4.8rem;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
@@ -167,17 +173,18 @@ body {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 18px;
-  background-color: #0f2e48d0;
+  /* border-radius: 18px; */
+  background-color: #0f2e4881;
 }
 
 .hero-description {
   font-size: 2.4rem;
   padding: 1.2rem;
+  /* background-color: #0f2e4881; */
 }
 
 /* ******************* */
-/* HEADMASTER & SIGN-UP*/
+/* HEADMASTER*/
 /* ******************* */
 .headmaster {
   display: grid;
@@ -228,7 +235,7 @@ body {
 
 .headmaster-text-box {
   color: #e7e9ea;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   padding: 1.8rem;
 }
@@ -294,7 +301,7 @@ body {
 }
 
 .info-attribute {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   display: flex;
   gap: 1.2rem;
@@ -303,7 +310,7 @@ body {
 .info-title {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #0f2e48;
   margin-bottom: 3.2rem;
@@ -351,7 +358,7 @@ body {
 }
 
 .news-description {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.8;
   margin-right: 2.4rem;
 }
@@ -367,7 +374,7 @@ body {
 /* ******************* */
 /* SIGN-UP*/
 /* ******************* */
-.sign-up {
+/* .sign-up {
   width: 50%;
   background: linear-gradient(#1a4d78, #246ca8);
   padding: 6.4rem;
@@ -377,4 +384,119 @@ body {
 
 .sign-up .heading-tertiary {
   color: #e7f5ff;
+} */
+
+/* ******************* */
+/* GALLERY & OPINION */
+/* ******************* */
+.section-galleries {
+  margin-bottom: 9.6rem;
+}
+.gallery-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #22b8cf;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+}
+
+/* OPINION */
+/* .opinion-box {
+  text-align: center;
+  background-color: #f1f3f5;
+  padding: 5.2rem;
+}
+
+.opinion-title {
+  font-size: 2rem;
+} */
+
+/* ******************* */
+/* FOOTER */
+/* ******************* */
+.footer {
+  padding: 9.6rem 0;
+  background-color: #0a1f30;
+  color: #d6ebfc;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6.4rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #c5f6fa;
+}
+
+.footer-logo {
+  height: 20rem;
+}
+
+.footer-img {
+  display: block;
+  height: 20rem;
+  width: 100%;
+  margin: 1.6rem 0;
+}
+
+.footer-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.contacts {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.email:link,
+.email:visited {
+  text-decoration: none;
+  color: #d6ebfc;
+}
+
+.email:hover,
+.email:active {
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style: none;
+  font-size: 1.4rem;
+  list-style: square;
+}
+.menu-item {
+  text-decoration: none;
+  color: #d6ebfc;
+  display: inline-block;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #c5f5fae5;
+  width: 100%;
+}
+
+.social-list {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.social-item {
+  color: #d6ebfc;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.8rem 0;
+}
+
+.social-icon {
+  font-size: 2rem;
+  padding-right: 1.8rem;
 }
