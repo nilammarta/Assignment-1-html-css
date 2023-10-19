@@ -22,25 +22,26 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
     <title>SMAN 1 Baturiti</title>
   </head>
   <body>
-    <header class="header">
-      <div class="section-header">
-        <div class="header-img">
+    <header class="section-header">
+      <div class="section-navigation">
+        <div class="nav-img">
           <img
             class="logo"
             src="img/logo-sma-1-01.svg"
             alt="logo SMAN 1 Baturiti"
           />
-          <a class="logo-description" href="#">SMAN 1 Baturiti</a>
+          <a href="#" class="logo-description">SMAN 1 Baturiti</a>
         </div>
         <nav class="navigation">
           <ul class="nav-list">
-            <li><a class="nav-link" href="#">Beranda</a></li>
+            <li><a class="nav-link link-open" href="#">Beranda</a></li>
             <li>
-              <a class="nav-link" href="profil.html" target="_blank">Profil</a>
+              <a class="nav-link" href="profil.html">Profil</a>
             </li>
             <li><a class="nav-link" href="#">Guru</a></li>
             <li><a class="nav-link" href="#">Siswa</a></li>
@@ -118,6 +119,13 @@
                         name="school-outline"
                       ></ion-icon>
                       <span>Kurikulum Merdeka Belajar</span>
+                    </li>
+                    <li class="info-attribute">
+                      <ion-icon
+                        class="info-icon"
+                        name="call-outline"
+                      ></ion-icon>
+                      <span>No Telp: 03682301064</span>
                     </li>
                   </ul>
                 </div>
@@ -260,7 +268,7 @@
                   siswa-siswi kelas X dan juga Dewan Ambalan Arjuna-Srikandi.
                   Kegiatan kemah ini berlangsung selama 3 hari 2 malam, dengan
                   melakukan beberapa kegiatan seperti Pentas Seni, Api Unggun,
-                  Upaca pembukaan dan lainnya.
+                  Upacara pembukaan dan lainnya.
                 </p>
                 <a class="detail" href="#">Selengkapnya...</a>
                 <hr />
@@ -268,18 +276,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="location">
-          <h2 class="heading-secondary">Kunjungi Kami</h2>
-          <img
-            class="map-img"
-            src="img/peta_sman1baturiti.jpg"
-            alt="gambar peta SMAN 1 Baturiti"
-          />
-          <p class="location-description">
-            Br. Puseh, Ds. Perean, Baturiti, Tabanan-Bali
-          </p>
-          <h2 class="heading-secondary">Hubungi Kami</h2>
-        </div> -->
       </section>
       <!-- <section class="section-sign-up">
         <div class="sign-up container">
@@ -315,73 +311,61 @@
         </div>
       </section> -->
       <section class="section-galleries">
+        <!-- <p class="subheading">Galeri</p> -->
+        <h2 class="heading-secondary gallery-title">Galeri</h2>
         <div class="gallery-box">
           <!-- <figure class="gallery-item" -->
           <img
             class="gallery-img"
-            src="img/gallery/gallery-1.jpg"
-            alt="kegiatan rapat guru dengan kepala sekolah"
+            src="img/galleries/gallery1.jpg"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-2.jpg"
-            alt="kegiatan rapat guru dengan kepala sekolah"
+            src="img/galleries/gallery2.jpg"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-3.jpg"
-            alt="foto anggota pasakibraka smerti dengan guru pembina"
+            src="img/galleries/gallery3.jpg"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-4.jpg"
-            alt="foto kegiatan bersih-bersih lingkungan sekolah"
+            src="img/galleries/gallery4.JPG"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-5.jpg"
-            alt="foto kegiatan persembahyangan"
+            src="img/galleries/gallery5.JPG"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-6.jpg"
-            alt="foto kegiatan upacara bendera"
+            src="img/galleries/gallery6.JPG"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-7.png"
-            alt="foto sosialisasi mahasiswa stikom"
+            src="img/galleries/gallery7.JPG"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-8.jpg"
-            alt="foto siswa nari rejang sari dalam acara saraswati"
+            src="img/galleries/gallery8.JPG"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-9.jpg"
-            alt="foto siswa menari dalam acara pelepasan siswa kelas 12"
+            src="img/galleries/gallery9.jpg"
+            alt="foto kegiatan graduation"
           />
           <img
             class="gallery-img"
-            src="img/gallery/gallery-10.jpg"
-            alt="foto pembuatan tandu pramuka"
+            src="img/galleries/gallery10.JPG"
+            alt="foto kegiatan graduation"
           />
         </div>
-
-        <!-- <div class="opinion-box">
-          <p class="opinion-title">Berikan Kami Masukan dan Pendapat Anda</p>
-          <form class="opinion-form">
-            <label for="opinion">Pendapat</label>
-            <input
-              id="opinion"
-              name="opinion"
-              type="text"
-              placeholder="Masukkan Pendapat Anda"
-              required
-            />
-          </form>
-        </div> -->
       </section>
       <footer class="footer">
         <div class="container grid-footer">
@@ -408,15 +392,18 @@
             />
             <address class="contacts">
               <div>
-                <ion-icon name="location-outline"></ion-icon>
+                <ion-icon
+                  class="contact-icon"
+                  name="location-outline"
+                ></ion-icon>
                 <span>Br. Puseh, Ds. Perean, Baturiti, Tabanan-Bali</span>
               </div>
               <div>
-                <ion-icon name="call-outline"></ion-icon>
+                <ion-icon class="contact-icon" name="call-outline"></ion-icon>
                 <span>Telp: (0368) 2301064</span>
               </div>
               <div>
-                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
                 <span
                   ><a class="email" href="mailto:sman1baturiti@gmail.com"
                     >Email: sman1baturiti@gmail.com</a
@@ -424,7 +411,10 @@
                 </span>
               </div>
               <div>
-                <ion-icon name="browsers-outline"></ion-icon>
+                <ion-icon
+                  class="contact-icon"
+                  name="browsers-outline"
+                ></ion-icon>
                 <span>Website: sman1baturiti.sch.id</span>
               </div>
             </address>
@@ -433,10 +423,10 @@
             <p class="footer-title">menu</p>
             <ul class="menu-list">
               <li><a class="menu-item" href="#">Beranda</a></li>
+              <li><a class="menu-item" href="profil.html">Profil</a></li>
               <li><a class="menu-item" href="#">Guru</a></li>
               <li><a class="menu-item" href="#">Siswa</a></li>
               <li><a class="menu-item" href="#">Fitur</a></li>
-              <li><a class="menu-item" href="#">Cari</a></li>
             </ul>
           </div>
           <div class="social-col">
@@ -444,16 +434,16 @@
             <ul class="social-list">
               <li>
                 <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-                <a href="#" class="social-item">Instagram</a>
+                <span><a href="#" class="social-item">Instagram</a></span>
               </li>
               <li>
-                <ion-icon class="social-icon" name="logo-facebook"></ion-icon
-                ><a href="#" class="social-item">Facebook</a>
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                <span><a href="#" class="social-item">Facebook</a></span>
               </li>
 
               <li>
                 <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
-                <a href="#" class="social-item">YouTube</a>
+                <span><a href="#" class="social-item">YouTube</a></span>
               </li>
             </ul>
           </div>

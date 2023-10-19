@@ -11,6 +11,16 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="profil.css" />
     <title>Profil SMAN 1 Baturiti</title>
   </head>
@@ -27,8 +37,8 @@
         </div>
         <nav class="navigation">
           <ul class="nav-list">
-            <li><a class="nav-link" href="#">Beranda</a></li>
-            <li><a class="nav-link" href="#">Profil</a></li>
+            <li><a class="nav-link" href="index.html">Beranda</a></li>
+            <li><a class="nav-link link-open" href="#">Profil</a></li>
             <li><a class="nav-link" href="#">Guru</a></li>
             <li><a class="nav-link" href="#">Siswa</a></li>
             <li><a class="nav-link" href="#">Fitur</a></li>
@@ -41,18 +51,104 @@
         </nav>
       </div>
       <div class="hero">
-        <div class="hero-text">
+        <div class="hero-text-box">
           <h1 class="heading-primary">Profil Sekolah</h1>
           <h2 class="heading-secondary">SMA Negeri 1 Baturiti</h2>
+          <q class="hero-description">
+            <em>Sekolah yang bermutu, mencetak generasi yang berilmu </em>
+          </q>
         </div>
 
-        <div class="hero-img">
+        <div class="hero-img-box">
           <img
-            src="img/patungSaraswati.jpg"
+            class="hero-img"
+            src="img/profil/rapat-guru.jpg"
             alt="gambar halaman depan SMAN 1 Baturiti"
           />
         </div>
       </div>
     </header>
+    <main>
+      <section class="profil-section">
+        <!-- <div class="profil"> -->
+        <div class="profil-img-box">
+          <img
+            class="profil-img"
+            src="img/profil/smerti.jpg"
+            alt="foto halaman depan SMAN 1 Baturiti"
+          />
+        </div>
+        <div class="profil-text-box">
+          <h2 class="heading-secondary profil-title">Profil Sekolah</h2>
+          <p class="profil-text">
+            SMA Negeri 1 Baturiti berdiri sejak tahun 1990, lebih tepatnya pada
+            tanggal 1 April 1990. SMA Negeri 1 Baturiti merupakan satu-satunya
+            SMA Negeri di kecamatan Baturiti. Sama seperti sekolah SMA pada
+            umumnya di Indonesia yang memiliki tiga jenjang atau tingkat, mulai
+            dari kelas X, XI, sampai XII.
+          </p>
+          <table>
+            <tr>
+              <th>Nama Sekolah</th>
+              <td>:</td>
+              <td>SMA NEGERI 1 BATURITI</td>
+            </tr>
+            <tr>
+              <th>NPSN</th>
+              <td>:</td>
+              <td>50101131</td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>:</td>
+              <td>Negeri</td>
+            </tr>
+            <tr>
+              <th>Akreditasi</th>
+              <td>:</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <th>Telepon</th>
+              <td>:</td>
+              <td>(0368) 2301064</td>
+            </tr>
+            <tr>
+              <th>Alamat</th>
+              <td>:</td>
+              <td>Br. Puseh, Ds. Perean, Baturiti, Tabanan-Bali</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>:</td>
+              <td>sman1baturiti@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+        <!-- </div> -->
+      </section>
+      <section class="goals-section">
+        <div class="visi">
+          <img src="img/sma-img-9.jpg" />
+          <h3 class="heading-tertiary">Visi Sekolah</h3>
+          <q class="visi-text">Beriman, Berbudaya, Cerdas dan Berprestasi</q>
+          <ol class="visi-description">
+            <li class="visi-item">Memiliki kesadaran spiritual yang kokoh</li>
+            <li class="visi-item">
+              Sopan santun dalam berfikir, berucap dan berbuat
+            </li>
+            <li class="visi-item">
+              Berkepribadian yang terpuji dalam kehidupan bermasyarakat
+            </li>
+            <li class="visi-item">Berkemampuan mengembangkan potensi diri</li>
+            <li class="visi-item">
+              Berprestasi dalam bidang akademik dan non-akademik
+            </li>
+          </ol>
+        </div>
+        <div class="misi"></div>
+        <div class="goal"></div>
+      </section>
+    </main>
   </body>
 </html>
