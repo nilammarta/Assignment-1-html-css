@@ -119,6 +119,9 @@ body {
   margin-top: 0;
   margin-bottom: 6.4rem;
   padding: 1.2rem;
+  color: #edf2f4;
+  background-color: #023e8a;
+  border: 4px solid #9ab2d0;
 }
 
 .heading-tertiary {
@@ -126,4 +129,114 @@ body {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 1.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  color: #083d77;
+}
+
+/* ******************* */
+/* FOOTER */
+/* ******************* */
+.footer {
+  padding: 9.6rem 10rem;
+  background-color: #0a1f30;
+  color: #d6ebfc;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.8rem;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #c5f6fa;
+}
+
+.footer-logo {
+  height: 18rem;
+}
+
+.footer-img {
+  display: block;
+  height: 15rem;
+  width: 100%;
+  margin: 1.6rem 0;
+}
+
+.footer-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.contacts {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.contact-icon {
+  color: #fab005;
+}
+
+.email:link,
+.email:visited {
+  text-decoration: none;
+  color: #d6ebfc;
+}
+
+.email:hover,
+.email:active {
+  cursor: pointer;
+}
+
+.menu-list {
+  font-size: 1.4rem;
+  list-style: square;
+}
+.menu-item {
+  text-decoration: none;
+  color: #d6ebfc;
+  display: inline-block;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #c5f5fae5;
+  width: 100%;
+}
+
+.menu-item:hover,
+.menu-item:active {
+  color: #fab005;
+}
+
+.social-list {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.social-item {
+  color: #d6ebfc;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.8rem 0;
+}
+
+.social-icon {
+  font-size: 2rem;
+  padding-right: 1.8rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin-top: 3.2rem;
 }

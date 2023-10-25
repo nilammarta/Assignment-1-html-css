@@ -11,19 +11,28 @@
   margin-bottom: 9.6rem;
 }
 
-.heading-primary {
-  text-transform: uppercase;
-  padding: 0 2.4rem 0 1.2rem;
-  color: #0a1f30;
-  border-radius: 11px;
-  margin-bottom: 0;
+.hero-text-box {
+  padding: 3.2rem 1.2rem;
+  margin: 0 6.4rem;
 }
 
-.heading-secondary {
+.heading-primary {
+  text-transform: uppercase;
+  padding: 1.2rem;
+  color: #e4b100;
+  background-color: #02326e;
+  margin-bottom: 0;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.hero-text-box .heading-secondary {
   color: #0a1f30;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 4.8rem;
+  background-color: #d0ebff;
+  text-align: end;
 }
 
 .heading-tertiary {
@@ -35,15 +44,18 @@
 
 .hero-description {
   font-size: 1.8rem;
-  font-weight: 600;
+  line-height: 1.6;
   color: #143e60;
-  padding: 1.2rem;
-  background-color: #85c2f6;
-  border-radius: 11px;
+  margin-bottom: 2.4rem;
 }
 
-.hero-text-box {
-  padding: 3.2rem 0;
+.hero-quote {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffb600;
+  padding: 1.2rem;
+  background-color: #023e8a;
+  border-radius: 15px;
 }
 
 .hero-img-box {
@@ -128,13 +140,14 @@ tr:nth-child(even) {
 .goals-section {
   background-color: #e8edf2;
   margin-bottom: 9.6rem;
+  padding: 9.6rem 0;
 }
 
-.goals-section .heading-secondary {
-  color: #0a1f30;
-  background-color: #339af0;
+/* .goals-section .heading-secondary {
+  color: #edf2f4;
+  background-color: #023e8a;
   text-align: center;
-}
+} */
 
 .visi-misi-goals {
   display: grid;
@@ -201,35 +214,38 @@ tr:nth-child(even) {
 /* SARANA & PRASARANA*/
 /* ******************* */
 .facilities {
-  background-color: #a5d8ff;
-}
-
-.facilities .heading-secondary {
-  color: #0a1f30;
-  background-color: #339af0;
-  text-align: center;
+  background-color: #d6ebfc;
+  padding: 9.6rem 0;
 }
 
 .facilities-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 4.8rem;
-  padding: 6.4rem;
-  margin-bottom: 9.6rem;
+  padding: 3.2rem 0;
+  /* transition: all 1.5s; */
 }
 
 .facility-item {
-  border-radius: 9px;
-  background-color: #1864ab;
+  transition: all 0.5s;
+}
+
+.facility-item:hover {
+  transform: scale(1.4);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .facility-title {
   font-size: 1.8rem;
   padding: 2.4rem;
   font-weight: 700;
-  color: #e8edf2;
+  /* color: #e8edf2; */
+  color: #ffb627;
+  background-color: #1864ab;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .facility-img {
