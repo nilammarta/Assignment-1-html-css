@@ -1,0 +1,20 @@
+/* ***************************** */
+/* Breakpoints: Dibawah 1200px) */
+/* ***************************** */
+@media (max-width: 75em) {
+  .container {
+    max-width: 960px;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .hero-text {
+    padding: 3.2rem;
+  }
+
+  /* page: 2 */
+  .hero-description {
+    font-size: 16px;
+  }
+}

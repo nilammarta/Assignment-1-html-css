@@ -96,7 +96,7 @@
 /* ******************* */
 .hero-text {
   color: #ebf5fe;
-  padding: 6.4rem 2.4rem 4.8rem 2.4rem;
+  padding: 6.4rem 6.4rem 2.4rem 6.4rem;
   margin-bottom: 4.8rem;
   text-align: center;
   font-weight: 500;
@@ -300,6 +300,11 @@
   color: #0f2e48;
 }
 
+.news-date {
+  font-size: 1.4rem;
+  color: #495057;
+}
+
 /* ******************* */
 /* SIGN-UP*/
 /* ******************* */
@@ -337,7 +342,7 @@
 .gallery-img {
   display: block;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .img {
