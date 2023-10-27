@@ -1,19 +1,221 @@
 /* ***************************** */
+/* Breakpoints: Dibawah 1310px) */
+/* ***************************** */
+@media (max-width: 84em) {
+  .container {
+    max-width: 1200px;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+  }
+
+  /* page 2 */
+  .hero-quote {
+    font-size: 1.4rem;
+  }
+  .profile-img {
+    height: 70%;
+  }
+  .profile-text-box {
+    padding-left: 0;
+  }
+}
+
+/* ***************************** */
 /* Breakpoints: Dibawah 1200px) */
 /* ***************************** */
 @media (max-width: 75em) {
+  .html {
+    font-size: 56.25%;
+  }
+
   .container {
     max-width: 960px;
+    padding: 0;
   }
 
   .heading-primary {
     font-size: 3.6rem;
   }
+
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 4.8rem;
+  }
   .hero-text {
     padding: 3.2rem;
   }
 
+  /* page: 1 */
+  .informations {
+    margin: 0 6.4rem 9.6rem 6.4rem;
+  }
+
+  .info-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
   /* page: 2 */
+  .hero {
+    gap: 4.8rem;
+  }
+  .hero-text-box {
+    margin: 0 4.8rem;
+    padding: 3.2rem 0;
+  }
+
+  .hero-img-box {
+    padding: 3.2rem;
+  }
+
+  .hero-quote {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+
+  .profile-section {
+    gap: 3.2rem;
+  }
+
+  .footer {
+    padding: 8rem;
+  }
+  .footer-description {
+    font-size: 1.3rem;
+  }
+
+  .profile-img-box {
+    /* height: 70%; */
+    padding: 6.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .visi,
+  .misi,
+  .goals {
+    padding: 4.8rem;
+  }
+}
+
+/* ***************************** */
+/* Breakpoints: Dibawah 992px) */
+/* ***************************** */
+@media (max-width: 62em) {
+  .html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .logo-description {
+    font-size: 1.4rem;
+  }
+
+  .nav-list {
+    font-size: 1.4rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    padding: 1.2rem 1.8rem;
+  }
+
+  /* page 1 */
+  .section-header {
+    background-position: center;
+  }
+
+  .headmaster {
+    display: flex;
+    flex-direction: column;
+    /* margin: 6.4rem; */
+  }
+
+  .informations {
+    gap: 6.4rem;
+    margin: 0;
+    margin-bottom: 9.6rem;
+  }
+
+  .info-attributes {
+    padding-left: 2rem;
+  }
+
+  .info-attribute {
+    font-size: 1.4rem;
+  }
+
+  .news-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-description {
+    font-size: 1.4rem;
+  }
+  .detail {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+  }
+  .news-date {
+    margin-top: 1.2rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* page 2 */
+  .hero {
+    gap: 3.2rem;
+  }
+  .hero-text-box {
+    margin-right: 0;
+  }
   .hero-description {
+    font-size: 1.4rem;
+  }
+
+  .hero-quote {
+    font-size: 1.2rem;
+  }
+
+  .hero-text-box {
+    margin-left: 2.4rem;
+  }
+  .hero-img-box {
+    padding: 0 2.4rem 0 0;
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-img-box {
+    padding: 6.4rem 6.4rem 3.2rem 6.4rem;
+  }
+  .profile-img {
+    height: 80%;
   }
 }
