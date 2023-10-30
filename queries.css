@@ -29,13 +29,12 @@
 /* Breakpoints: Dibawah 1200px) */
 /* ***************************** */
 @media (max-width: 75em) {
-  .html {
+  html {
     font-size: 56.25%;
   }
 
   .container {
-    max-width: 960px;
-    padding: 0;
+    max-width: 1140px;
   }
 
   .heading-primary {
@@ -62,6 +61,7 @@
   .gallery-box {
     grid-template-columns: repeat(4, 1fr);
   }
+
   /* page: 2 */
   .hero {
     gap: 4.8rem;
@@ -87,9 +87,9 @@
   .footer {
     padding: 8rem;
   }
-  .footer-description {
+  /* .footer-description {
     font-size: 1.3rem;
-  }
+  } */
 
   .profile-img-box {
     /* height: 70%; */
@@ -104,36 +104,76 @@
 }
 
 /* ***************************** */
-/* Breakpoints: Dibawah 992px) */
+/* Breakpoints: Dibawah (992px) (944px) Tablets*/
 /* ***************************** */
-@media (max-width: 62em) {
-  .html {
+@media (max-width: 59em) {
+  html {
     font-size: 50%;
   }
 
   .container {
-    max-width: 720px;
+    max-width: 960px;
   }
 
-  .heading-primary {
-    font-size: 3rem;
-  }
-
-  .heading-tertiary {
-    font-size: 2rem;
-  }
-
-  .logo-description {
-    font-size: 1.4rem;
-  }
-
-  .nav-list {
+  /* .nav-list {
     font-size: 1.4rem;
   }
 
   .nav-link:link,
   .nav-link:visited {
     padding: 1.2rem 1.8rem;
+  } */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navigation {
+    position: absolute;
+    background-color: rgba(51, 155, 240, 0.452);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%); */
+
+    z-index: 2;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-open .navigation {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:active {
+    font-size: 3rem;
   }
 
   /* page 1 */
@@ -141,10 +181,13 @@
     background-position: center;
   }
 
+  .hero-text {
+    z-index: 1;
+  }
   .headmaster {
     display: flex;
     flex-direction: column;
-    /* margin: 6.4rem; */
+    margin: 6.4rem;
   }
 
   .informations {
@@ -157,10 +200,6 @@
     padding-left: 2rem;
   }
 
-  .info-attribute {
-    font-size: 1.4rem;
-  }
-
   .news-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -171,16 +210,10 @@
     flex-direction: column;
   }
 
-  .news-description {
-    font-size: 1.4rem;
-  }
   .detail {
     margin-bottom: 0.8rem;
-    font-size: 1.4rem;
   }
-  .news-date {
-    margin-top: 1.2rem;
-  }
+
   .grid-footer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -192,9 +225,9 @@
   .hero-text-box {
     margin-right: 0;
   }
-  .hero-description {
+  /* .hero-description {
     font-size: 1.4rem;
-  }
+  } */
 
   .hero-quote {
     font-size: 1.2rem;
@@ -210,12 +243,75 @@
   .profile-section {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   .profile-img-box {
-    padding: 6.4rem 6.4rem 3.2rem 6.4rem;
+    padding: 8rem 9.6rem 0 9.6rem;
+    justify-content: center;
   }
-  .profile-img {
-    height: 80%;
+
+  .profile-text-box {
+    padding: 8rem;
+  }
+
+  .visi,
+  .misi,
+  .goals {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 3fr;
+    gap: 0;
+  }
+
+  .misi div {
+    grid-row: 1 / 2;
+  }
+
+  .facilities-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ***************************** */
+/* Breakpoints: Dibawah (768px) (704px) */
+/* ***************************** */
+@media (max-width: 48em) {
+  .container {
+    max-width: 720px;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+
+  .grid-footer {
+    gap: 0 3.2rem;
+  }
+
+  /* page 1 */
+  .informations {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto;
+  }
+
+  .info {
+    margin: 0 6.4rem;
+  }
+
+  .news-items {
+    gap: 2.4rem;
+  }
+
+  .news-description {
+    font-size: 1.4rem;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
