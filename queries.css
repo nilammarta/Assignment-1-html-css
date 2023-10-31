@@ -92,7 +92,6 @@
   } */
 
   .profile-img-box {
-    /* height: 70%; */
     padding: 6.4rem 3.2rem 3.2rem 3.2rem;
   }
 
@@ -138,10 +137,10 @@
     width: 100%;
     height: 100vh;
 
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(100%); */
+    transform: translateX(100%);
 
     z-index: 2;
 
@@ -158,12 +157,12 @@
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .nav-list {
@@ -184,6 +183,7 @@
   .hero-text {
     z-index: 1;
   }
+
   .headmaster {
     display: flex;
     flex-direction: column;
@@ -192,8 +192,7 @@
 
   .informations {
     gap: 6.4rem;
-    margin: 0;
-    margin-bottom: 9.6rem;
+    margin: 0 6.4rem 9.6rem, 6.4rem;
   }
 
   .info-attributes {
@@ -214,23 +213,25 @@
     margin-bottom: 0.8rem;
   }
 
-  .grid-footer {
-    grid-template-columns: repeat(2, 1fr);
+  .social-list {
+    padding-left: 0;
   }
 
   /* page 2 */
   .hero {
     gap: 3.2rem;
   }
+
   .hero-text-box {
     margin-right: 0;
   }
-  /* .hero-description {
-    font-size: 1.4rem;
-  } */
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
 
   .hero-quote {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .hero-text-box {
@@ -243,12 +244,13 @@
   .profile-section {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
   .profile-img-box {
+    display: flex;
+    width: 60%;
     padding: 8rem 9.6rem 0 9.6rem;
-    justify-content: center;
+    align-self: center;
   }
 
   .profile-text-box {
@@ -264,6 +266,13 @@
     gap: 0;
   }
 
+  .visi-img,
+  .misi-img,
+  .goal-img {
+    width: 80%;
+    height: 80%;
+  }
+
   .misi div {
     grid-row: 1 / 2;
   }
@@ -276,12 +285,16 @@
 /* ***************************** */
 /* Breakpoints: Dibawah (768px) (704px) */
 /* ***************************** */
-@media (max-width: 48em) {
+@media (max-width: 44em) {
   .container {
     max-width: 720px;
   }
 
   .heading-primary {
+    font-size: 3rem;
+  }
+
+  .heading-secondary {
     font-size: 2.4rem;
   }
 
@@ -290,6 +303,7 @@
   }
 
   .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
     gap: 0 3.2rem;
   }
 
@@ -297,10 +311,15 @@
   .informations {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: auto;
+    margin: 0 6.4rem 8rem 6.4rem;
   }
 
   .info {
-    margin: 0 6.4rem;
+    margin: 0 8rem;
+  }
+
+  .info-attributes {
+    padding-left: 2.4rem;
   }
 
   .news-items {
@@ -313,5 +332,143 @@
 
   .gallery-box {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Page 2 */
+  .hero {
+    /* grid-template-rows: 2fr, 1fr; */
+    grid-template-columns: auto;
+    gap: 0;
+  }
+
+  .hero-img-box {
+    margin: 6.4rem;
+    padding: 0;
+  }
+
+  .hero-text-box {
+    grid-row: 2 /3;
+    margin: 0 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .hero-quote {
+    font-size: 1.6rem;
+  }
+
+  .visi,
+  .misi,
+  .goals {
+    grid-template-rows: 3fr 3fr;
+  }
+}
+
+/* ***************************** */
+/* Breakpoints: Dibawah (576px) */
+/* ***************************** */
+@media (max-width: 34em) {
+  .container {
+    /* max-width: 540px; */
+    max-width: 100%;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 0 0 1.6rem 0;
+  }
+
+  .footer-logo {
+    height: 12rem;
+  }
+
+  .footer-img {
+    height: 10rem;
+  }
+
+  .footer-description {
+    font-size: 1.2rem;
+  }
+
+  /* page 1 */
+  .hero-text .hero-description {
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  .headmaster-description {
+    line-height: 1.8;
+  }
+
+  .informations {
+    margin: 0 0 6.4rem 0;
+  }
+
+  .info {
+    margin: 0;
+  }
+
+  .news-items {
+    grid-template-columns: auto;
+    margin: 0 2.4rem;
+  }
+
+  .news-description {
+    font-size: 1.6rem;
+  }
+
+  .gallery-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* page 2 */
+  .hero-img-box {
+    margin: 2.4rem;
+  }
+
+  .hero-text-box {
+    margin: 0 2.4rem;
+  }
+
+  .hero-description {
+    line-height: 1.8;
+  }
+
+  .profile-img-box {
+    padding: 4.8rem 4.8rem 0 4.8rem;
+  }
+
+  .profile-text-box {
+    padding: 4.3rem;
+  }
+
+  .profile-text {
+    line-height: 1.8;
+  }
+
+  .visi,
+  .misi,
+  .goals {
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .item {
+    line-height: 1.8;
+  }
+
+  .visi-img,
+  .misi-img,
+  .goal-img {
+    width: 100%;
+    /* height: 100%; */
   }
 }
