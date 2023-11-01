@@ -94,6 +94,23 @@ body {
   border-bottom: 2px solid #d6ebfc;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.6rem;
+  height: 4.8rem;
+  color: #d6ebfc;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* ******************* */
 /* HEADING */
 /* ******************* */
