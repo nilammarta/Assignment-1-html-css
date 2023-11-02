@@ -31,6 +31,13 @@
     ></script>
 
     <script defer src="script.js"></script>
+    <script defer src="slider.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
 
     <title>Profil SMAN 1 Baturiti</title>
   </head>
@@ -289,56 +296,126 @@
         <div class="container">
           <p class="subheading">Fasilitas</p>
           <h2 class="heading-secondary">Sarana dan Prasarana</h2>
-          <div class="facilities-box">
-            <div class="facility-item">
+          <!-- <div class="facilities-box"> -->
+          <div
+            class="splide"
+            role="group"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track facilities-box">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Ruang UKS</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/uks.jpg"
+                      alt="gambar ruang uks"
+                    />
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Gedung Kelas</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/gedung.jpg"
+                      alt="gambar gedung kelas"
+                    />
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Lapangan Upacara</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/Lapangan.jpg"
+                      alt="gambar lapangan upacara"
+                    />
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Padmasana</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/padmasana2.jpg"
+                      alt="gambar padmasana SMAN 1 Baturiti"
+                    />
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Perpustakaan</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/PERPUS.jpg"
+                      alt="gambar pepustakaan"
+                    />
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="facility-item">
+                    <p class="facility-title">Kantor Guru</p>
+                    <img
+                      class="facility-img"
+                      src="img/profil/KantorGuru.jpg"
+                      alt="gambar kantor guru"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="facility-item">
               <p class="facility-title">Ruang UKS</p>
               <img
                 class="facility-img"
                 src="img/profil/uks.jpg"
                 alt="gambar ruang uks"
               />
-            </div>
-            <div class="facility-item">
-              <p class="facility-title">Gedung Kelas</p>
-              <img
-                class="facility-img"
-                src="img/profil/gedung.jpg"
-                alt="gambar gedung kelas"
-              />
-            </div>
-            <div class="facility-item">
-              <p class="facility-title">Lapangan Upacara</p>
-              <img
-                class="facility-img"
-                src="img/profil/Lapangan.jpg"
-                alt="gambar lapangan upacara"
-              />
-            </div>
-            <div class="facility-item">
-              <p class="facility-title">Padmasana</p>
-              <img
-                class="facility-img"
-                src="img/profil/padmasana2.jpg"
-                alt="gambar padmasana SMAN 1 Baturiti"
-              />
-            </div>
-            <div class="facility-item">
-              <p class="facility-title">Perpustakaan</p>
-              <img
-                class="facility-img"
-                src="img/profil/PERPUS.jpg"
-                alt="gambar pepustakaan"
-              />
-            </div>
-            <div class="facility-item">
-              <p class="facility-title">Kantor Guru</p>
-              <img
-                class="facility-img"
-                src="img/profil/KantorGuru.jpg"
-                alt="gambar kantor guru"
-              />
-            </div>
-          </div>
+            </div> -->
+          <!-- <div class="facility-item">
+            <p class="facility-title">Gedung Kelas</p>
+            <img
+              class="facility-img"
+              src="img/profil/gedung.jpg"
+              alt="gambar gedung kelas"
+            />
+          </div> -->
+          <!-- <div class="facility-item">
+            <p class="facility-title">Lapangan Upacara</p>
+            <img
+              class="facility-img"
+              src="img/profil/Lapangan.jpg"
+              alt="gambar lapangan upacara"
+            />
+          </div> -->
+          <!-- <div class="facility-item">
+            <p class="facility-title">Padmasana</p>
+            <img
+              class="facility-img"
+              src="img/profil/padmasana2.jpg"
+              alt="gambar padmasana SMAN 1 Baturiti"
+            />
+          </div> -->
+          <!-- <div class="facility-item">
+            <p class="facility-title">Perpustakaan</p>
+            <img
+              class="facility-img"
+              src="img/profil/PERPUS.jpg"
+              alt="gambar pepustakaan"
+            />
+          </div> -->
+          <!-- <div class="facility-item">
+            <p class="facility-title">Kantor Guru</p>
+            <img
+              class="facility-img"
+              src="img/profil/KantorGuru.jpg"
+              alt="gambar kantor guru"
+            />
+          </div> -->
+          <!-- </div> -->
         </div>
       </section>
     </main>

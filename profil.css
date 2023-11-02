@@ -9,6 +9,8 @@
   justify-items: center;
   align-items: center;
   margin-bottom: 9.6rem;
+  /* max-width: 100vh; */
+  /* height: 50vh; */
 }
 
 .hero-text-box {
@@ -222,22 +224,23 @@ tr:nth-child(even) {
 }
 
 .facilities-box {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4.8rem;
-  padding: 3.2rem 0;
+  padding: 3.2rem 0; */
   /* transition: all 1.5s; */
+  margin: 8rem;
 }
 
-.facility-item {
+/* .facility-item {
   transition: all 0.5s;
 }
 
 .facility-item:hover {
   transform: scale(1.4);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-}
+} */
 
 .facility-title {
   font-size: 1.8rem;
