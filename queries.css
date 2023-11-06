@@ -50,6 +50,10 @@
   }
 
   /* page: 1 */
+  .headmaster {
+    margin: 6.4rem;
+  }
+
   .informations {
     margin: 0 6.4rem 9.6rem 6.4rem;
   }
@@ -87,9 +91,6 @@
   .footer {
     padding: 8rem;
   }
-  /* .footer-description {
-    font-size: 1.3rem;
-  } */
 
   .profile-img-box {
     padding: 6.4rem 3.2rem 3.2rem 3.2rem;
@@ -113,15 +114,6 @@
   .container {
     max-width: 960px;
   }
-
-  /* .nav-list {
-    font-size: 1.4rem;
-  }
-
-  .nav-link:link,
-  .nav-link:visited {
-    padding: 1.2rem 1.8rem;
-  } */
 
   .btn-mobile-nav {
     display: block;
@@ -277,10 +269,6 @@
   .misi div {
     grid-row: 1 / 2;
   }
-
-  /* .facilities-box {
-    grid-template-columns: repeat(2, 1fr);
-  } */
 }
 
 /* ***************************** */
@@ -378,11 +366,11 @@
 /* Breakpoints: Dibawah (576px) */
 /* ***************************** */
 @media (max-width: 34em) {
-  /* .container {
-    max-width: 540px;
+  .container {
+    /* max-width: 540px; */
     max-width: 100%;
     padding: 0 2.4rem;
-  } */
+  }
 
   .heading-primary {
     font-size: 2.4rem;
@@ -465,7 +453,7 @@
   }
 
   .profile-text-box {
-    padding: 4.3rem;
+    padding: 2.4rem;
   }
 
   .profile-text {
@@ -491,16 +479,8 @@
     /* height: 100%; */
   }
 
-  /* .facilities-box {
-    gap: 2.4rem;
-  } */
-
   .facility-title {
     font-size: 1.6rem;
     padding: 1.8rem;
   }
-
-  /* .facility-item {
-    overflow: hidden;
-  } */
 }
